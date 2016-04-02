@@ -1,0 +1,16 @@
+{
+  "name" : "mqtt2mongodb",
+  "description" : "",
+  "version" : "0.0.1",
+  "license" : {
+    "type": "MIT"
+  },
+  "main" : "mqtt2mongodb.js",
+  "engines" : {
+    "node" : ">= 4.4.2"
+  },
+  "dependencies" : {
+    "mqtt" : "*",
+    "mongoose" : "*"
+  }
+}
