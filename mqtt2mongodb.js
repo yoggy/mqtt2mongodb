@@ -83,6 +83,7 @@ function onReceiveMessage(topic, message) {
   mqtt_message.string  = message.toString();
   mqtt_message.rawdata = message;
   mqtt_message.json    = json;
+  mqtt_message.save();
 }
 
 function main() {
