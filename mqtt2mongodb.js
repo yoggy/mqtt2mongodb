@@ -74,8 +74,9 @@ function onReceiveMessage(topic, message) {
   }
 
   // create a collection name from topic string 
-  var collection_name = topic.replace(/\//g, '_');
-  var MQTTMessage = db.model('MQTTMessage', mqttMessageSchema, collection_name);
+  var model_name = topic.replace(/\//g, '_');
+  var collection_name = model_name;
+  var MQTTMessage = db.model(model_name, mqttMessageSchema, collection_name);
 
   mqtt_message = new MQTTMessage();
   mqtt_message.topic   = topic;
