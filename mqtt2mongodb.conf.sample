@@ -13,7 +13,7 @@
 ;     $ sudo supervisorctl reread
 ;     $ sudo supervisorctl add mqtt2mongodb
 ;     $ sudo supervisorctl status
-;     mqtt_whiteboard_capture                  RUNNING    pid 8192, uptime 0:00:30
+;     mqtt2mongodb         RUNNING    pid 8192, uptime 0:00:30
 ;
 ; see also
 ;     Supervisor: A Process Control System
